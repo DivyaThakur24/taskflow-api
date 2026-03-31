@@ -8,6 +8,7 @@ A scalable REST API with **JWT Authentication**, **Role-Based Access Control**, 
 ##### Login Details: 
 ###### Email: divya@example.com
 ###### Password: Password123
+---
 
 ## Tech Stack
 
