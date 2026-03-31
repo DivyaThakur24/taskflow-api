@@ -10,6 +10,8 @@ const logger = require('./utils/logger');
 
 const app = express();
 
+app.set('trust proxy', 1); // ← ADD THIS LINE HERE, before everything else
+
 // ─── Security Middleware ───────────────────────────────────────────────────────
 app.use(helmet());
 app.use(cors({
@@ -36,7 +38,7 @@ const authLimiter = rateLimit({
 app.use(globalLimiter);
 
 // ─── Body Parsing ──────────────────────────────────────────────────────────────
-app.use(express.json({ limit: '10kb' })); // Limit payload size
+app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
 // ─── HTTP Logging ──────────────────────────────────────────────────────────────
