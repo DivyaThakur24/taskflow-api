@@ -66,6 +66,16 @@ app.get('/health', (req, res) => {
   });
 });
 
+// ─── Root ──────────────────────────────────────────────────────────────────────
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'TaskFlow API is running',
+    version: '1.0.0',
+    docs: '/api-docs',
+  });
+});
+
 // ─── API Routes (versioned) ────────────────────────────────────────────────────
 app.use('/api/v1/auth', authLimiter, require('./routes/authRoutes'));
 app.use('/api/v1/tasks', require('./routes/taskRoutes'));
