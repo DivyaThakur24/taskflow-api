@@ -10,7 +10,7 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=5000
-      - MONGODB_URI=mongodb://mongo:27017/taskflow
+      - MONGODB_URI=mongodb+srv://divya_db_user:VdTNTOBoLk0N48Jn@cluster0.98at1vf.mongodb.net/taskflow-api?retryWrites=true&w=majority&appName=Cluster0
       - JWT_SECRET=${JWT_SECRET}
       - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
       - JWT_EXPIRES_IN=7d
