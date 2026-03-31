@@ -5,6 +5,9 @@ A scalable REST API with **JWT Authentication**, **Role-Based Access Control**, 
 ###### Vercel Deployment (Frontend): https://taskflow-api-eight.vercel.app/
 ###### Railway Deployment (Backend - MongoDB database): https://taskflow-api-production-6f9c.up.railway.app/
 ---
+##### Login Details: 
+###### Email: divya@example.com
+###### Password: Password123
 
 ## Tech Stack
 
