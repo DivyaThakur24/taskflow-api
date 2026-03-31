@@ -70,7 +70,4 @@ userSchema.methods.toJSON = function () {
   return obj;
 };
 
-// Index for fast email lookups
-userSchema.index({ email: 1 });
-
 module.exports = mongoose.model('User', userSchema);
